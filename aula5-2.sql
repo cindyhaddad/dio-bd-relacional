@@ -1,3 +1,4 @@
+-- Total de usuários cadastrados
 SELECT COUNT(*) FROM usuarios;
 
 -- Media da idade dos usuarios
