@@ -1,5 +1,7 @@
 -- Total de usuários cadastrados
 SELECT COUNT(*) FROM usuarios;
+-- outra forma de pesquisar Total de usuários cadastrados
+SELECT COUNT(*) as total_usuarios FROM usuarios;
 
 -- Media da idade dos usuarios
 SELECT AVG(TIMESTAMPDIFF(YEAR, data_nascimento, CURRENT_DATE())) AS idade
