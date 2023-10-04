@@ -33,9 +33,11 @@ INSERT INTO usuarios (nome, email, data_nascimento, rua) VALUES
 ('Pedro Lima', 'pedro.lima@example.com', '1996-09-27', 'Av. D');
 
 
-
+EXPLAIN SELECT * FROM usuarios WHERE email = "joao.silva@example.com";
+-- retornou rows 1 (1 linha porque o e-mail só pode ser um por usuário = UNIQUE = Unico)
 
 EXPLAIN SELECT * FROM usuarios WHERE nome = "Maria";
+
 
 EXPLAIN SELECT * FROM usuarios us
 INNER JOIN reservas rs
